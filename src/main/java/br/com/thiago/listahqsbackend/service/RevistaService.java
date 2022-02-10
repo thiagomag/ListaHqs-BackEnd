@@ -1,7 +1,7 @@
 package br.com.thiago.listahqsbackend.service;
 
 import br.com.thiago.listahqsbackend.dto.RevistaDto;
-import br.com.thiago.listahqsbackend.entity.EditoraEnum;
+import br.com.thiago.listahqsbackend.entity.enuns.EditoraEnum;
 import br.com.thiago.listahqsbackend.entity.Revista;
 import br.com.thiago.listahqsbackend.exception.RevistaNotFoundException;
 import br.com.thiago.listahqsbackend.repository.RevistaRepository;

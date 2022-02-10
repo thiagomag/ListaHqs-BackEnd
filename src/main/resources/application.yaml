@@ -2,3 +2,6 @@ spring:
   data:
     mongodb:
       uri: mongodb+srv://${USERNAME}:${PASSWORD}@cluster0.tnfij.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher

@@ -1,4 +1,4 @@
-package br.com.thiago.listahqsbackend.configuration;
+package br.com.thiago.listahqsbackend.configuration.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

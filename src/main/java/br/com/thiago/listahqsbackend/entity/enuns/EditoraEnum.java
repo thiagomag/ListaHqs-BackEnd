@@ -1,4 +1,4 @@
-package br.com.thiago.listahqsbackend.entity;
+package br.com.thiago.listahqsbackend.entity.enuns;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

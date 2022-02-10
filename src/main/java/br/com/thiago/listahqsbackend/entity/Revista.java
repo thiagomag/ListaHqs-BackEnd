@@ -1,6 +1,7 @@
 package br.com.thiago.listahqsbackend.entity;
 
 import br.com.thiago.listahqsbackend.dto.RevistaDto;
+import br.com.thiago.listahqsbackend.entity.enuns.EditoraEnum;
 import lombok.Builder;
 import lombok.Data;
 import org.springframework.data.annotation.Id;

@@ -5,3 +5,8 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
+
+hq:
+  jwt:
+    secret: ${FORUM_JWT_SECRET}
+    expiration: 86400000

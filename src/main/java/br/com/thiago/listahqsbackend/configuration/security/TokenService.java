@@ -13,10 +13,10 @@ import java.util.Date;
 @Service
 public class TokenService {
 
-    @Value("${forum.jwt.expiration}")
+    @Value("${hq.jwt.expiration}")
     private String expiration;
 
-    @Value("${forum.jwt.secret}")
+    @Value("${hq.jwt.secret}")
     private String secret;
 
     public boolean isTokenValido(String token) {
@@ -33,7 +33,7 @@ public class TokenService {
         Date hoje = new Date();
         Date dataExpiracao = new Date(hoje.getTime() + Long.parseLong(expiration));
         return Jwts.builder()
-                .setIssuer("API do forum da Alura")
+                .setIssuer("API de HQ's")
                 .setSubject(logado.getUsuario())
                 .setIssuedAt(hoje)
                 .setExpiration(dataExpiracao)

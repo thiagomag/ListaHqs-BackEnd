@@ -33,6 +33,7 @@ public class RevistaService {
     public ResponseEntity<?> delete(String id) {
         var revista = revistaRepository.findById(id).orElseThrow(() -> new RevistaNotFoundException(id));
         revista.setDeletedTmsp(LocalDateTime.now());
+        revistaRepository.save(revista);
         return ResponseEntity.ok().build();
     }
 
